@@ -1,0 +1,50 @@
+/* Set up some basic styles for the app */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+.stopwatch {
+  text-align: center;
+  margin-top: 50px;
+}
+
+h1 {
+  color: #555;
+  font-size: 3em;
+  margin-top: 0;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  color: #555;
+  cursor: pointer;
+  font-size: 1.2em;
+  margin: 10px;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+button:hover {
+  color: #222;
+}
+
+/* Style the buttons to align horizontally */
+button + button {
+  margin-left: 0;
+}
+
+/* Style the Start button differently when the app is running */
+button#start.started {
+  color: #c0392b;
+}
+
+button#start.started:hover {
+  color: #e74c3c;
+}
