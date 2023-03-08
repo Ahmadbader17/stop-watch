@@ -1,4 +1,3 @@
-/* Set up some basic styles for the app */
 * {
   box-sizing: border-box;
 }
@@ -18,21 +17,23 @@ h1 {
   color: #555;
   font-size: 3em;
   margin-top: 0;
+  text-shadow: 1px 1px 1px #ddd;
 }
 
 button {
   background-color: transparent;
-  border: none;
+  border: 2px solid #555;
   color: #555;
   cursor: pointer;
   font-size: 1.2em;
   margin: 10px;
   padding: 10px;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 button:hover {
-  color: #222;
+  background-color: #555;
+  color: #fff;
 }
 
 /* Style the buttons to align horizontally */
@@ -42,9 +43,12 @@ button + button {
 
 /* Style the Start button differently when the app is running */
 button#start.started {
-  color: #c0392b;
+  background-color: #c0392b;
+  border-color: #c0392b;
+  color: #fff;
 }
 
 button#start.started:hover {
-  color: #e74c3c;
+  background-color: #e74c3c;
+  border-color: #e74c3c;
 }
